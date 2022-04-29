@@ -14,6 +14,8 @@ webpack
 
 babel
 
+- polyfill
+
 - es5 transpile
 
 - ts transpile
