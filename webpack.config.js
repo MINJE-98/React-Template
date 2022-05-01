@@ -1,11 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
-const prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
   mode: 'development',
-
   devServer: {
     static: {
       directory: path.join(__dirname, 'src'),
@@ -26,7 +24,11 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: ['babel-loader', 'ts-loader'],
+        use: ['babel-loader'],
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
