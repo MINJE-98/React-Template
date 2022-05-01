@@ -14,9 +14,7 @@
 - [x] env
 - [x] JSX
 
-## tsconfig 설정
-
-[view](https://github.com/MINJE-98/react-init/blob/main/tsconfig.json])
+## [tsconfig 설정](https://github.com/MINJE-98/react-init/blob/main/tsconfig.json)
 
 ## eslint 설정
 
