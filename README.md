@@ -10,13 +10,12 @@
 - [x] ts loader
 - [ ] file loader
 - [ ] 프로덕션, 개발 모드 설정
-- [ ] 추가 필요한 플러그인 적용
+- [x] 추가 필요한 플러그인 적용
 
 ## babel
 
 - [ ] polyfill
 - [x] env
-- [x] typesScript
 - [x] JSX
 
 ## tsconfig 설정
