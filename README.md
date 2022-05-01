@@ -6,6 +6,7 @@
 - [x] css loader
 - [x] babel loader
 - [x] ts loader
+- [x] file loader
 - [ ] 프로덕션, 개발 모드 설정
 - [x] 추가 필요한 플러그인 적용
 
@@ -16,9 +17,9 @@
 
 ## [tsconfig 설정](https://github.com/MINJE-98/react-init/blob/main/tsconfig.json)
 
-## eslint 설정
+## [eslint 설정](https://github.com/MINJE-98/react-init/blob/main/.eslintrc)
 
-## prettier 설정
+## [prettier 설정](https://github.com/MINJE-98/react-init/blob/main/.prettierrc)
 
 # 아티클
 
