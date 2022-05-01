@@ -7,8 +7,6 @@
     "allowJs": true, // js  파일을 ts 파일에 import하는 것을 허용
     "jsx": "preserve", // JSX 코드를 어떻게 컴파일할지 설정
     "isolatedModules": true, // Babel이 TypeScript 프로젝트의 파일을 안전하게 트랜스파일할 수 있는지 확인합니다.
-    "declaration": true, // tsc를 사용해 .js 파일이 아닌 .d.ts 파일이 생성되었는지 확인합니다.
-    "emitDeclarationOnly": true, // tsc를 사용해 .js 파일이 아닌 .d.ts 파일이 생성되었는지 확인합니다.
     "moduleResolution": "node", // 모듈 해석 방법 설정
     "resolveJsonModule": true, // 확장자가 .json인 모듈의 import 허용 여부
     "esModuleInterop": true // CommonJS와 ES Modules 간의 상호 운용성이 생기게 할 지 여부
