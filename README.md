@@ -6,17 +6,16 @@
 - [x] css loader
 - [x] babel loader
 - [x] ts loader
-- [ ] file loader
 - [ ] 프로덕션, 개발 모드 설정
 - [x] 추가 필요한 플러그인 적용
 
 ## babel
 
-- [ ] polyfill
 - [x] env
 - [x] JSX
 
 ## tsconfig 설정
+
 [view](https://github.com/MINJE-98/react-init/blob/main/tsconfig.json])
 
 ## eslint 설정
@@ -32,7 +31,22 @@ webpack에서만 babel을 사용할 수 있고, 다른 babel을 사용하는 라
 
 [참고](https://stackoverflow.com/questions/43206062/why-do-i-have-to-put-babel-presets-inside-babelrc-and-webpack-config-js/43208353#43208353)
 
-## polyfill설정은 왜 따로 해줘야할까
+## babel이 힘들게 esnext를 es5로 변환해주는데 왜 polyfill을 따로 설정하는 걸까?
+
+E11, 오래된 브라우저는 아래와 같은 JS문법을 지원하지 않는다.
+
+- Promises
+- Map
+- Set
+- Symbol
+- Weakmap
+- Weakset
+- Array.from, Array.includes, Array.of, Array#find, Array.buffer, Array#findIndex
+- Object.assign, Object.entries, Object.values
+
+es5로 변환이 되어도 위의 문법을 지원하지 않는 오래된 브라우저를 위해 polyfill을 사용하여 추가적으로 동작할 수 있게 해야한다.
+
+[참고](https://levelup.gitconnected.com/why-you-should-add-babel-polyfill-for-every-react-application-1997bdb8a524)
 
 ## ts-loader vs babel-typeScript
 
