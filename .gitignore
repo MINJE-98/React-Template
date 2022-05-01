@@ -1,3 +1,9 @@
+# package-lock | node_modules
 node_modules
-
 package-lock.json
+
+# 환경 변수
+.env*
+
+# 빌드
+dist
