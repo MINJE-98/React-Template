@@ -23,10 +23,8 @@
 
 # 아티클
 
-## babel 설정
-
-babel 설정을 webpack에서 직접 설정해줄 수도 있는데 왜 따로 babel.config.js로 빼는 이유는 webpack에서 option으로 설정하게 되면
-webpack에서만 babel을 사용할 수 있고, 다른 babel을 사용하는 라이브러리는 따로 설정을 해줘야하기 때문이다.
+## babel 설정을 webpack에서 직접 설정해줄 수도 있는데 왜 따로 babel.config.js로 빼는 이유
+webpack에서 option으로 설정하게 되면 webpack에서만 babel을 사용할 수 있고, 다른 babel을 사용하는 라이브러리는 따로 설정을 해줘야하기 때문이다.
 
 [참고](https://stackoverflow.com/questions/43206062/why-do-i-have-to-put-babel-presets-inside-babelrc-and-webpack-config-js/43208353#43208353)
 
