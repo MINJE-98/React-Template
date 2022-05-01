@@ -1,10 +1,8 @@
 # react-init
 
-# Goal
-
 ## webpack
 
-- [x] [HMR](https://github.com/webpack/webpack-dev-server)적용
+- [x] [HMR](https://github.com/webpack/webpack-dev-server)
 - [x] css loader
 - [x] babel loader
 - [x] ts loader
