@@ -33,7 +33,7 @@ webpack에서 option으로 설정하게 되면 webpack에서만 babel을 사용�
 
 <br><br>
 
-## babel이 힘들게 esnext를 es5로 변환해주는데 왜 polyfill을 따로 설정하는 걸까?
+## polyfill을 따로 설정하는 걸까?
 
 E11, 오래된 브라우저는 아래와 같은 JS문법을 지원하지 않는다.
 
