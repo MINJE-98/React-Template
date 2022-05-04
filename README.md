@@ -62,3 +62,4 @@ babel-typeScript를 사용하게 되면 타입체크를 하지않기 때문에 t
 
 [참고1](https://evanlouie.github.io/posts/typescript-babel-preset-typescript-ts-loader)
 [참고2](https://stackoverflow.com/questions/38320220/how-to-setup-typescript-babel-webpack)
+[참고3](https://www.typescriptlang.org/ko/docs/handbook/babel-with-typescript.html)
