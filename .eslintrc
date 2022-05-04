@@ -29,5 +29,5 @@
     "react/react-in-jsx-scope": "off"
   },
 
-  "ignorePatterns": ["node_modules/", "*.config.js"]
+  "ignorePatterns": ["node_modules/", "*.config.js", "webpack.*.js"]
 }

@@ -3,14 +3,7 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  mode: "development",
-  devServer: {
-    static: {
-      directory: path.join(__dirname, "src"),
-    },
-    compress: true,
-    port: 3000,
-  },
+  mode: "production",
   entry: "./src/index.tsx",
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
@@ -47,6 +40,5 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
-    new webpack.HotModuleReplacementPlugin(),
   ],
 };
