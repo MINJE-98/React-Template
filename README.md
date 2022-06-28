@@ -33,6 +33,8 @@ git flow, git-hub flow, git-lab flow중 프로젝트에 맞는 형상 관리를 
 
 - [ReactV17의 JSX의 Transform 방식](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html)으로 인해 plugin:react/jsx-runtime를 확장합니다.
 
+- prettier를 확장합니다.
+
 - 프로젝트에 따라 룰을 수정합니다.
 
 # 패키지 관리
@@ -69,13 +71,11 @@ Package.json, yarn.lock 파일은 직접 수정하지 않고 패키지 관리자
 
 strict 모드를 활성화합니다.
 
-유틸리티관련 코드를 다룰 때 인자가 두개 이상인 경우 객체 리터럴로 인자를 전달합니다.
-
 props가 2개이상인 경우 interface를 해당 파일 위에 생성합니다.
 
 각 객체간의 메세지를 주고받을 때 반드시 typeSafe 하게 타입을 정의합니다.
 
-# 네이밍 컨벤션
+# 파일 네이밍 컨벤션
 
 tsx,jsx 파일은 파스칼 케이스를 준수합니다.
 
