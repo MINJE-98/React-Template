@@ -6,6 +6,9 @@ module.exports = {
   mode: "production",
   entry: "./src/index.tsx",
   resolve: {
+    alias: {
+      "@Components": path.resolve(__dirname, "./src/components"),
+    },
     extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
 
