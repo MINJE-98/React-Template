@@ -17,16 +17,44 @@
   },
 
   "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime"
+    "airbnb", // https://github.com/airbnb/javascript
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:react/jsx-runtime", // https://www.npmjs.com/package/eslint-plugin-react#Configuration
+    "plugin:prettier/recommended" // https://www.npmjs.com/package/eslint-plugin-prettier#Recommended-Configuration
   ],
-
-  "plugins": ["@typescript-eslint", "react"],
-
   "rules": {
-    // insert rules
-    "react/react-in-jsx-scope": "off"
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal", "type"],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "**/interface/**",
+            "group": "type"
+          },
+          {
+            "pattern": "@Components/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "**",
+            "group": "external"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
   },
 
   "ignorePatterns": ["node_modules/", "*.config.js", "webpack.*.js"]
