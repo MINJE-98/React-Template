@@ -1,5 +1,5 @@
-import React from 'react';
+import HelloWorld from "@Components/helloWorld/HelloWorld";
 
-const App = () => <>Test</>;
+const App = () => <HelloWorld />;
 
 export default App;
