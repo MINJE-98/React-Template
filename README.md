@@ -88,6 +88,95 @@ tsx,jsx 파일은 파스칼 케이스를 준수합니다.
 외부 라이브러리 → 컴포넌트 → 타입
 
 순으로 Import를 정렬합니다.
+# 파일 구조
+
+```tsx
++ src
++ components
+	+ atom
+		+ button
+			| HeadLogin.tsx
+			| ModalLogin.tsx
+			| index.ts
+		| Input.tsx
+		| Image.tsx
+	+ alri..
+		+ login
+			| hooks
+			| interface
+			| style.css
+			| test.ts
+			| index.tsx
++ pages
+	| login.tsx
+	| home.tsx
++ hooks
+	+ react-query
+		| index.ts
+	+ custom-hook
++ context
++ services
+	+ api
+		+ core
+			| interface
+			| core.ts
+			| index.ts
+		+ exception
+			| interface
+			| exception.ts
+			| index.ts
+	+ message
+		| sussess
+		| loading
+		| error
++ interface
++ constants
+	+ environment
+		| host.ts
+		| index.ts
++ utility
+	+ date
+	+ ramdom-image
+ index.tsx
+```
+
+# 목표
+
+각 역할에 맞게 폴더를 분리하여 서로 의존성을 낮추도록 유도합니다.
+
+# 타입
+
+인터페이스가 필요하면 interface를 먼저 작성합니다.
+
+interface를 공유해야 할 경우 전역 interface를 만들고 각 객체의 interface의 폴더에 확장하여 interface를 사용합니다.
+
+# 상태
+
+## 내부 상태
+
+각 컴포넌트의 내부적인 상태는 컴포넌트에 해당하는 hooks에서 관리합니다. 
+
+## 전역 상태
+
+전역으로 관리가 되어야하는 상태는 최상위 폴더의 hooks에서 관리합니다.
+
+context 또한 최상위 폴더에서 관리됩니다.
+
+## 서버 상태
+
+서버 상태는 항상 최상위 폴더인 hooks에서 관리합니다.
+
+# 서비스
+
+서버와 통신하기 위한 모듈들을 설정하는 레이어입니다.
+
+# 상수
+
+환경변수, 프로젝트의 상수값을 담당하는 레이어입니다.
+
+# 유틸리티
+
+애플리케이션에서 필요한 모듈을 레핑하여 애플리케이션에 필요한 형태로 반환하는 레이어입니다.
 
 # Article
 
